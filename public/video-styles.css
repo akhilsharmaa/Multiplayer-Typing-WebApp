@@ -1,6 +1,6 @@
 #draggable-video {
     position: absolute;
-    right: 20px; 
+    left: 80px; 
     width: 300px;
     max-height: 200px;
     border: 1px solid #000;
@@ -35,3 +35,31 @@
     pointer-events: none; /* Avoid interaction issues */
   }
   
+.bottom-card {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: min-content;
+  height: max-content;
+  background-color: #000000;
+  display: flex;
+  border-radius: 10px;
+  justify-content: space-around;
+  align-items: center;
+  border: 2px solid #ffffff40; 
+  padding-right: 8px;
+}
+
+.video-container {
+  flex: 1;
+  max-width: 200px; 
+  margin: 10px 10px 10px 0px;
+}
+
+.remote-video {
+  width: 200px;
+  height: auto;
+  border-radius: 5px;
+  margin: 0 10px;
+  background-color: rgb(69, 69, 69);
+}

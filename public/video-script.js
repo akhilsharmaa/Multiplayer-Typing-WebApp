@@ -49,3 +49,11 @@ async function initializeLocalFeed()  {
     localVideoEle.srcObject = stream; 
 
 }
+
+const collapsibleCard = document.getElementById('collapsibleCard');
+const toggleButton = document.getElementById('toggleButton');
+
+toggleButton.addEventListener('click', () => {
+  collapsibleCard.classList.toggle('open');
+  toggleButton.innerHTML = collapsibleCard.classList.contains('open') ? '<span>&#9660;</span>' : '<span>&#9650;</span>';
+});
